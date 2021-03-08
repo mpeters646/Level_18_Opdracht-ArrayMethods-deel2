@@ -50,7 +50,8 @@ isItalyInTheGreat7(['Canada', 'France', 'Germany', 'Italy', 'Japan', 'United Kin
 // Opdracht E
 // Gebruik .forEach
 const tenfold = (numbers) => {
-  return numbers.forEach((number) => number * 10);
+  const result = numbers.forEach(number => number * 10);
+  return result;
 };
 
 console.log(tenfold([1, 4, 3, 6, 9, 7, 11]));
