@@ -18,14 +18,22 @@ console.log(findSpiderMan(superheroes));
 
 // Opdracht B
 // Gebruik de .forEach method of, een level hoger: de .map method.
-const doubleArrayValues = (arr) => {
-  console.log(arr.forEach((element) => console.log(element)));
+const doubleArrayValues = (inputArray) => {
+  console.log(inputArray.map((value) => value * 2));
 };
 
 doubleArrayValues([1, 2, 3]);
 // result should be [2, 4, 6]
 
 // Opdracht C
+const containsNumberBiggerThan10 = () => {
+  // code here
+};
+
+containsNumberBiggerThan10([1, 4, 3, 6, 9, 7, 11]);
+// result should be true
+containsNumberBiggerThan10([1, 2, 1, 2, 1, 2]);
+// result should be false
 
 // Opdracht D
 
