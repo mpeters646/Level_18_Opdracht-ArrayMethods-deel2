@@ -26,8 +26,11 @@ doubleArrayValues([1, 2, 3]);
 // result should be [2, 4, 6]
 
 // Opdracht C
-const containsNumberBiggerThan10 = () => {
-  // code here
+const containsNumberBiggerThan10 = (array) => {
+  const result = array.some((number) => {
+    return number > 10;
+  });
+  console.log(result);
 };
 
 containsNumberBiggerThan10([1, 4, 3, 6, 9, 7, 11]);
