@@ -39,8 +39,22 @@ containsNumberBiggerThan10([1, 2, 1, 2, 1, 2]);
 // result should be false
 
 // Opdracht D
+const isItalyInTheGreat7 = (array) => {
+  const italy = array.includes('Italy');
+  console.log(italy);
+};
+
+isItalyInTheGreat7(['Canada', 'France', 'Germany', 'Italy', 'Japan', 'United Kingdom', 'United States']);
+// result should be true
 
 // Opdracht E
+// Gebruik .forEach
+const tenfold = (numbers) => {
+  return numbers.forEach((number) => number * 10);
+};
+
+console.log(tenfold([1, 4, 3, 6, 9, 7, 11]));
+// result should be [10, 40, 30, 60, 90, 70, 110]
 
 // Opdracht F
 
