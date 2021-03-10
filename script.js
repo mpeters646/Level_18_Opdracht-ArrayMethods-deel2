@@ -60,7 +60,6 @@ isItalyInTheGreat7(['Canada', 'France', 'Germany', 'Italy', 'Japan', 'United Kin
 // const tenfold = (numbers) => numbers.map((number) => number * 10); // .map instead of .forEach
 
 const result = [];
-
 const tenfold = (numbers) => {
   numbers.forEach((number) => {
     result.push(number * 10);
@@ -72,5 +71,20 @@ console.log(tenfold([1, 4, 3, 6, 9, 7, 11]));
 // result should be [10, 40, 30, 60, 90, 70, 110]
 
 // Opdracht F
+const isBelow100 = (numbers) => {
+  return numbers.every((number) => number < 100);
+};
+
+console.log(isBelow100([1, 81, 4, 53, 3, 6, 79, 2, 43, 7, 28, 101, 11, 77, 84, 98]));
+// result should be: false
 
 // Opdracht G
+/* In een array met integers. Schrijf een JavaScript functie die alle waardes in de array bij elkaar optelt en het totaal van de som retourneert. Gebruik de .reduce method. En echt, gebruik Google. */
+
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+const bigSum = (numbers) => {
+  return numbers.reduce(reducer);
+};
+
+console.log(bigSum([1, 81, 4, 53, 3, 6, 79, 2, 43, 7, 28, 11, 77, 84, 98, 101, 206, 234]));
+// result should be 1118
