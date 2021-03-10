@@ -57,7 +57,16 @@ isItalyInTheGreat7(['Canada', 'France', 'Germany', 'Italy', 'Japan', 'United Kin
 // result should be true
 
 // Opdracht E
-const tenfold = (numbers) => numbers.map((number) => number * 10);
+// const tenfold = (numbers) => numbers.map((number) => number * 10); // .map instead of .forEach
+
+const result = [];
+
+const tenfold = (numbers) => {
+  numbers.forEach((number) => {
+    result.push(number * 10);
+  });
+  return result;
+};
 
 console.log(tenfold([1, 4, 3, 6, 9, 7, 11]));
 // result should be [10, 40, 30, 60, 90, 70, 110]
