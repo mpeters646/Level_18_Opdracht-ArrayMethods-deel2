@@ -1,8 +1,17 @@
 // Opdracht A
 const superheroes = [
-  { name: 'Batman', alter_ego: 'Bruce Wayne' },
-  { name: 'Superman', alter_ego: 'Clark Kent' },
-  { name: 'Spiderman', alter_ego: 'Peter Parker' },
+  {
+    name: 'Batman',
+    alter_ego: 'Bruce Wayne',
+  },
+  {
+    name: 'Superman',
+    alter_ego: 'Clark Kent',
+  },
+  {
+    name: 'Spiderman',
+    alter_ego: 'Peter Parker',
+  },
 ];
 
 // Hier komt jouw functie
@@ -48,11 +57,7 @@ isItalyInTheGreat7(['Canada', 'France', 'Germany', 'Italy', 'Japan', 'United Kin
 // result should be true
 
 // Opdracht E
-// Gebruik .forEach
-const tenfold = (numbers) => {
-  console.log(numbers);
-  return numbers.forEach((number) => number * 10);
-};
+const tenfold = (numbers) => numbers.map((number) => number * 10);
 
 console.log(tenfold([1, 4, 3, 6, 9, 7, 11]));
 // result should be [10, 40, 30, 60, 90, 70, 110]
